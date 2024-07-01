@@ -22,7 +22,7 @@ public class DynamicControlsPage extends BasePage {
         driver.findElement(BUTTON_REMOVE).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(ITS_GONE));
     }
-    public boolean checkboxIsNotSelected() {
+    public boolean checkboxIsSelected() {
         return driver.findElement(CHECKBOX).isSelected();
     }
     public int checkboxNotFind() {

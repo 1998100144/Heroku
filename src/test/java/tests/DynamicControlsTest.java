@@ -8,7 +8,7 @@ public class DynamicControlsTest extends BaseTest{
     @Test
     public void findText (){
         dynamicControlsPage.open();
-        assertFalse(dynamicControlsPage.checkboxIsNotSelected());
+        assertFalse(dynamicControlsPage.checkboxIsSelected());
         dynamicControlsPage.itsGoneWait();
         assertEquals(dynamicControlsPage.checkboxNotFind(), 0);
     }
